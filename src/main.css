@@ -49,12 +49,10 @@ img {
   color: #fff;
   cursor: pointer;
   font-weight: 500;
-  border-radius: 4px;
 }
 
 .box {
   background: #fff;
-  border-radius: 4px;
   padding: 1em;
 }
 
@@ -100,6 +98,10 @@ img {
 
 .modal > * {
   cursor: initial;
+}
+
+.rounded {
+  border-radius: 4px;
 }
 
 .px\:1\.5 {

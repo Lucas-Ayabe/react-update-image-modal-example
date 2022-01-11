@@ -1,7 +1,12 @@
-import { Home } from "./pages";
+import { ImageContextProvider } from "./contexts/image-context";
+import * as Pages from "./pages";
 
 function App() {
-  return <Home />;
+  return (
+    <ImageContextProvider>
+      <Pages.HomeWithFlux />
+    </ImageContextProvider>
+  );
 }
 
 export default App;
