@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background: #ddd;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.container {
+  max-width: 50rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flow > * + * {
+  margin-top: 1em;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.button {
+  display: inline-block;
+  padding: 1em 2em;
+  font-size: 0.9em;
+  font-family: inherit;
+  text-transform: uppercase;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.box {
+  background: #fff;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+.box.raised {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.perfil {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.image-input .input {
+  display: none;
+}
+
+.image-input label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.modal {
+  animation: fadeIn 0.3s ease-in-out forwards;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 !important;
+
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+}
+
+.modal > * {
+  cursor: initial;
+}
+
+.px\:1\.5 {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.m\:auto {
+  margin: auto;
+}
+
+.mx\:auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
